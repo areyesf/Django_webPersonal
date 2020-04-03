@@ -50,10 +50,10 @@ a {
   padding: 10px 5px 10px 0;
   margin-bottom: 1.5rem;
 }
-h2 {
+h2,h5 {
   font-weight: 100;
 }
-article {
+article{
   margin-left: 200px;
   max-width: 900px;
   line-height: 2rem;
@@ -126,10 +126,21 @@ nav {
 }
 
 /* ME */
-.me {
+section {
   position: relative;
   padding: 3rem 0;
   display: block;
+}
+/*CV*/
+.job{
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+.job p{
+  line-height: 1.5rem;
+}
+.job h4{
+    font-weight: normal;
 }
 
 /*FOOTER*/
