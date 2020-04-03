@@ -1,7 +1,11 @@
+/********************************/
 /* IMPORT FONT */
+/********************************/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
 
+/********************************/
 /* RESET */
+/********************************/
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +15,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+/********************************/
 /* COLOR-PALETTE */
+/********************************/
 :root {
   --color-fontB: #000;
   --color-fontW: #fff;
@@ -20,10 +25,15 @@
   --color-bg-footer: #1d1d1d;
   --color--bg-yellow: #e2e458;
 }
+/********************************/
 /* GENERAL STYLES */
+/********************************/
 body {
   color: var(--color-fontB);
   font-family: "Roboto", sans-serif;
+}
+.container{
+  min-height: 100vh;
 }
 ul {
   display: flex;
@@ -50,17 +60,20 @@ a {
   padding: 10px 5px 10px 0;
   margin-bottom: 1.5rem;
 }
-h2,h5 {
+h2,
+h5 {
   font-weight: 100;
 }
-article{
+article {
   margin-left: 200px;
   max-width: 900px;
   line-height: 2rem;
   font-size: 1rem;
   font-weight: lighter;
 }
+/********************************/
 /* NAV */
+/********************************/
 nav {
   display: flex;
   justify-content: space-between;
@@ -106,7 +119,9 @@ nav {
 #social_links li {
   padding: 0 0.2rem;
 }
+/********************************/
 /* HERO */
+/********************************/
 .hero {
   display: flex;
   align-items: center;
@@ -124,26 +139,48 @@ nav {
 .hero img {
   max-height: 100%;
 }
-
+/********************************/
 /* ME */
+/********************************/
 section {
   position: relative;
   padding: 3rem 0;
   display: block;
 }
+/********************************/
 /*CV*/
-.job{
-    margin-bottom: 1rem;
-    line-height: 2rem;
+/********************************/
+.job {
+  margin-bottom: 1rem;
+  line-height: 2rem;
 }
-.job p{
+.job p {
   line-height: 1.5rem;
 }
-.job h4{
-    font-weight: normal;
+.job h4 {
+  font-weight: normal;
 }
+/********************************/
+/*PORTAFOLIO*/
+/********************************/
+.grid-portafolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 4rem;
+  max-width: 1200px;
+  text-align: center;
+  margin: 3rem auto;
 
+}
+.grid-portafolio img {
+  display: block;
+  height: calc(100% - 4rem);
+  width: 100%;
+  object-fit: cover;
+}
+/********************************/
 /*FOOTER*/
+/********************************/
 footer {
   display: flex;
   justify-content: space-between;
