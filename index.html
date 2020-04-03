@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Pesonal | Thomas Rivera</title>
     <link rel="stylesheet" href="/index.css" />
+    <script
+      src="https://kit.fontawesome.com/74e2b55770.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
-      <h3>Hola, Soy Thomas Rivera</h3>
+      <div class="hello">
+        <h3>Hola, Soy Thomas Rivera</h3>
+        <p>diseñador y consultor web</p>
+
+      </div>
       <div id="links">
         <ul id="nav_links">
           <li><a href="#">Inicio</a></li>
@@ -16,10 +24,18 @@
           <li><a href="#">Portafolio</a></li>
         </ul>
         <ul id="social_links">
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">linkedin</a></li>
-          <li><a href="#">instagram</a></li>
-          <li><a href="#">twitter</a></li>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -27,17 +43,22 @@
     <div class="container">
       <div class="hero">
         <h1>
-          Buscando el siguiente desafío para cambiar el mundo
-          <span class="bg-y">digital</span>
+          <span class="txt-bold">Buscando</span> el siguiente desafío para
+          <span class="txt-bold"
+            >cambiar el mundo <span class="bg-y">digital</span></span
+          >
         </h1>
-        <div class="imgProfile">
-          <img src="https://i.ibb.co/37HXMd8/img-profile.jpg" alt="" />
-        </div>
+        <img
+          src="https://i.ibb.co/37HXMd8/img-profile.jpg"
+          alt="imagen de perfil"
+        />
       </div>
       <!-- fin-hero -->
       <div class="me">
-        <h2>Sobre mi</h2>
-        <p>
+        <div class="title-bg">
+          <h2>Sobre mi</h2>
+        </div>
+        <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
           consequat est vel nisi suscipit vestibulum. Pellentesque ac neque
           laoreet, lacinia tortor eu, tempor nisi. Nulla rhoncus augue augue,
@@ -51,7 +72,7 @@
           dolor congue fringilla. Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Maecenas non ornare lorem, id vestibulum magna.
           Pellentesque lobortis eget risus in lacinia.
-        </p>
+        </article>
       </div>
       <!-- fin-me -->
       <footer>
@@ -59,7 +80,7 @@
           &copy; Todos los derechos reservados | Thomas Rivera
         </p>
         <p class="contact">
-          +56 9 1234 5678 | <a href="#">thomasriveras@gmail.com</a>
+          +56 9 1234 5678 | <a href="mailto:thomasriveras@gmail.com">thomasriveras@gmail.com</a>
         </p>
       </footer>
       <!-- fin-footer -->
