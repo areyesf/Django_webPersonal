@@ -71,6 +71,12 @@ article {
   font-size: 1rem;
   font-weight: lighter;
 }
+@media(max-width:550px){
+  article{
+    margin: 0 1.5rem;
+    text-align: justify;
+  }
+}
 /********************************/
 /* NAV */
 /********************************/
@@ -83,8 +89,8 @@ nav {
   height: 100px;
   padding: 0 2rem;
   font-size: 1rem;
-  z-index: 1;
 }
+
 .hello {
   display: flex;
   flex-direction: column;
@@ -99,7 +105,6 @@ nav {
 .hello p {
   font-weight: lighter;
 }
-
 #links {
   display: flex;
   align-items: center;
@@ -118,6 +123,35 @@ nav {
 }
 #social_links li {
   padding: 0 0.2rem;
+}
+@media(max-width:550px){
+  nav{
+    flex-direction: column;
+    padding:0;
+    margin: 0;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .hello{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #links {
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  #nav_links{
+    margin-bottom: 1rem;
+    background-color: var(--color-bg-footer);
+    color: var(--color-fontW);
+    padding: 0.5rem 0;
+    justify-content: center;
+  }
+  
 }
 /********************************/
 /* HERO */
@@ -138,6 +172,18 @@ nav {
 }
 .hero img {
   max-height: 100%;
+}
+@media{
+  .hero{
+    flex-direction: column;
+  }
+  .hero h1{
+    padding: 0 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 /********************************/
 /* ME */
@@ -160,6 +206,7 @@ section {
 .job h4 {
   font-weight: normal;
 }
+
 /********************************/
 /*PORTAFOLIO*/
 /********************************/
@@ -186,6 +233,11 @@ section {
 .grid-portafolio p {
   color: var(--color-fontW);
   margin-top: 1.5rem;
+}
+@media(max-width:550px){
+  .grid-portafolio{
+    padding: 0 0.5rem;
+  }
 }
 /********************************/
 /*FOOTER*/
