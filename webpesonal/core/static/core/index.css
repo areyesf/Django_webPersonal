@@ -172,11 +172,20 @@ section {
   margin: 3rem auto;
 
 }
+.grid-portafolio a {
+  border-radius: 10px;
+  background-color: var(--color-bg-footer);
+  height: 100%;
+}
 .grid-portafolio img {
   display: block;
   height: calc(100% - 4rem);
   width: 100%;
   object-fit: cover;
+}
+.grid-portafolio p {
+  color: var(--color-fontW);
+  margin-top: 1.5rem;
 }
 /********************************/
 /*FOOTER*/

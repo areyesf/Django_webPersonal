@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from core import views as core_views
+from portafolio import views as portafolio_views
 
 urlpatterns = [
+    path('', core_views.index, name="index"),
+    path('cv/',core_views.cv, name="cv"),
+    path('portafolio/', portafolio_views.portafolio, name="portafolio"),
     path('admin/', admin.site.urls),
 ]

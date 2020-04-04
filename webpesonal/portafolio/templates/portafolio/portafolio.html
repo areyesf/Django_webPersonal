@@ -1,0 +1,21 @@
+{%extends 'core/base.html'%}
+{% block content%}
+      <!-- PORTAFOLIO      -->
+      <section>
+        <div class="title-bg">
+          <h2>Portafolio</h2>
+        </div>
+        <div class="grid-portafolio">
+          {% for projecto in projectos %}
+          <a href="{{projecto.link}}" target="_blank">
+            <img
+              src="{{projecto.img_link}}"
+              alt="imagen previsualizada de un sitio web creado por el desarrollador"
+            />
+            <p>
+              {{projecto.titulo}}
+            </p>
+          </a>
+          {% endfor %}
+      </section>
+{% endblock %}
